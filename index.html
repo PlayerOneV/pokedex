@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="pokedex.js"></script>
+  <title>Pokedex</title>
+</head>
+<body>
+  <div class="pokedex">
+    <div class="left-container">
+      <div class="container_top">
+        <div class="power_light"></div>
+        <div class="lights">
+          <div class="light_red"></div>
+          <div class="light_yellow"></div>
+          <div class="light_green"></div>
+        </div>
+      </div>
+      <div class="left-container__main-section-container">
+        <div class="left-container__main-section">
+          <div class="main-section__white">
+            <div class="main-section__black">
+              <div class="main-screen" id="fondo_Tipo">
+                <div class="screen__header">
+                  <span class="poke-name" id="name_Pokemon"></span>
+                  <span class="poke-id" id="id_Pokemon"></span>
+                  <span class="hide" id="ID"></span>
+                </div>
+                <div class="pokemon_image">
+                  <img src="" class="poke-front-image" id="img_Front" alt="front">
+                  <img src="" class="poke-back-image" id="img_Back" alt="back">
+                </div>
+                <div class="container_types">
+                  <div class="types">
+                    <span class="poke-type-one" id="TypeOne"></span>
+                  </div>
+                  <div class="types">
+                    <span class="poke-type-two" id="TypeTwo"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container_controllers">
+            <div class="container_directions">
+              <div class="directions top"></div>
+              <div class="directions left"></div>
+              <div class="directions middle"></div>
+              <div class="directions right"></div>
+              <div class="directions bottom"></div>
+            </div>
+            <div class="controllers__buttons">
+              <div class="buttons__button">B</div>
+              <div class="buttons__button">A</div>
+            </div>
+          </div>
+        </div>
+        <div class="left-container__right">
+          <div class="left-container__hinge"></div>
+          <div class="left-container__hinge"></div>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="right-container__black">
+        <div class="right-container__screen">
+          <h1 class="poke-name">Estadisticas</h1>
+          <div class="stats">
+            <div class="list-container">
+              <div class="info_pokemon" id="stat_hp"></div>
+              <div class="info_pokemon" id="stat_defense"></div>
+              <div class="info_pokemon" id="stat_specialAttack"></div>
+            </div>
+            <div class="list-container">
+              <div class="info_pokemon" id="stat_attack"></div>
+              <div class="info_pokemon" id="stat_speed"></div>
+              <div class="info_pokemon" id="stat_specialDefense"></div>
+            </div>
+          </div>
+          <h1 class="poke-name">Movimientos</h1>
+          <div id="pokeMovimientos" class="container-moves"></div>
+        </div>
+      </div>
+      <div class="right-container__buttons">
+        <div class="left-button" id="previous">Anterior</div>
+        <div class="right-button" id="next">Siguiente</div>
+      </div>
+      <div class="right-container__buttons">
+        <input type="text" id="pokeSearch" style="width: 120px; margin-left: 5px;" placeholder="Nombre/número">
+        <div class="right-button" id="search">Buscar</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
